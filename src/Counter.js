@@ -26,7 +26,7 @@ class Counter extends Component {
             }));
           }}
         >
-          +1
+          +2
         </button>
         <h1>{number2}</h1>
         <button
