@@ -8,6 +8,7 @@ import EventFunc from "./EventFunc";
 import Validation from "./Validation";
 import Ref from "./Ref";
 import ScrollBox from "./ScrollBox";
+import Iteration from "./Iteration";
 
 class App extends Component {
   render() {
@@ -16,6 +17,8 @@ class App extends Component {
         <MyComponent name="React" favoriteNumber="s">
           리액트
         </MyComponent>
+        <br />
+        <Iteration></Iteration>
         <br />
         <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
         <button onClick={() => this.scrollBox.scrollToBottom()}>
