@@ -7,6 +7,7 @@ import Event from "./Event";
 import EventFunc from "./EventFunc";
 import Validation from "./Validation";
 import Ref from "./Ref";
+import ScrollBox from "./ScrollBox";
 
 class App extends Component {
   render() {
@@ -16,6 +17,10 @@ class App extends Component {
           리액트
         </MyComponent>
         <br />
+        <ScrollBox ref={(ref) => (this.scrollBox = ref)} />
+        <button onClick={() => this.scrollBox.scrollToBottom()}>
+          맨 밑으로{" "}
+        </button>
         <Ref></Ref>
         <Validation></Validation>
         <EventFunc></EventFunc>
