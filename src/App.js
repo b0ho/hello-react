@@ -32,6 +32,7 @@ const App = () => {
 
   return (
     <div>
+      <Counter></Counter>
       <button
         onClick={() => {
           setVisible(!visible);
