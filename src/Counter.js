@@ -1,6 +1,6 @@
 import React, { useReducer } from "react";
 
-function reducerA(state, action) {
+const reducerA = (state, action) => {
   switch (action.type) {
     case "INCREMENT":
       return { value: state.value + 1 };
@@ -9,7 +9,7 @@ function reducerA(state, action) {
     default:
       return state;
   }
-}
+};
 
 const Counter = () => {
   const [state, dispatch] = useReducer(reducerA, { value: 0 });

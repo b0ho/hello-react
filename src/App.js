@@ -12,6 +12,7 @@ import Iteration from "./Iteration";
 import LifeCycle from "./LifeCycle";
 import ErrorBoundary from "./ErrorBoundary";
 import Info from "./Info";
+import Average from "./Average";
 
 function getRandomColor() {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -32,6 +33,7 @@ const App = () => {
 
   return (
     <div>
+      <Average></Average>
       <Counter></Counter>
       <button
         onClick={() => {
