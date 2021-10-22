@@ -13,6 +13,8 @@ import LifeCycle from "./LifeCycle";
 import ErrorBoundary from "./ErrorBoundary";
 import Info from "./Info";
 import Average from "./Average";
+import ClassLocal from "./ClassLocal";
+import FuncLocal from "./FuncLocal";
 
 function getRandomColor() {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -33,6 +35,8 @@ const App = () => {
 
   return (
     <div style={{ margin: "20px" }}>
+      <FuncLocal></FuncLocal>
+      <ClassLocal></ClassLocal>
       <Average></Average>
       <Counter></Counter>
       <button
