@@ -32,7 +32,7 @@ const App = () => {
   const [visible, setVisible] = useState(false);
 
   return (
-    <div>
+    <div style={{ margin: "20px" }}>
       <Average></Average>
       <Counter></Counter>
       <button
