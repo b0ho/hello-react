@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import SassComponent from "./SassComponent";
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
             Learn
           </a>
         </header>
+        <SassComponent></SassComponent>
       </div>
     );
   }
