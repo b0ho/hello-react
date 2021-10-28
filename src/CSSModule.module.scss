@@ -1,17 +1,19 @@
 .wrapper {
-    background: black;
-    padding: 1rem;
-    color: white;
-    font-size: 2rem;
-}
+  background: black;
+  padding: 1rem;
+  color: white;
+  font-size: 2rem;
 
-.inverted {
+  &.inverted {
     color: black;
     background: white;
     border: 1px solid black;
+  }
 }
 
-:global .something {
+:global {
+  .something {
     font-weight: 800;
     color: aqua;
+  }
 }

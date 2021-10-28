@@ -1,4 +1,4 @@
-import stylesA from "./CSSModule.module.css";
+import stylesA from "./CSSModule.module.scss";
 import classNames from "classnames/bind";
 
 const cx = classNames.bind(stylesA);
